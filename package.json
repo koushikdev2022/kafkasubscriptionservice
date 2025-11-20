@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ts config",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "nodemon --watch src --exec ts-node --transpile-only src/index.ts",
@@ -34,6 +34,7 @@
     "express": "^5.1.0",
     "express-validator": "^7.3.0",
     "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
     "morgan": "^1.10.1",
     "mysql2": "^3.15.3",
     "reflect-metadata": "^0.2.2",
