@@ -30,7 +30,6 @@ export class Role {
     @UpdateDateColumn({ type: "timestamp" })
     updated_at!: Date;
 
-    @OneToMany(() => User, (user) => user.role)
-    users!: User[];
+   
     
 }
