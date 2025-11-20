@@ -59,6 +59,7 @@ class KafkaConfig {
     }
 
     await this.consumer.run({
+      autoCommit: false, 
       eachMessage: async ({ topic, partition, message }) => {
         try {
           const messageValue = message.value?.toString();
