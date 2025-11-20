@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ts config",
   "main": "index.js",
-  "scripts": {
+   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "nodemon --watch src --exec ts-node --transpile-only src/index.ts",
@@ -11,7 +11,8 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:generate": "npm run typeorm -- migration:generate -d src/config/db.ts",
     "migration:run": "npm run typeorm -- migration:run -d src/config/db.ts",
-    "migration:revert": "npm run typeorm migration:revert -d src/config/db.ts"
+    "migration:revert": "npm run typeorm migration:revert -d src/config/db.ts",
+    "migration:create": "npm run typeorm -- migration:create -n"
   },
   "author": "koushik",
   "license": "ISC",
